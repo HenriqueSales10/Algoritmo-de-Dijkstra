@@ -67,7 +67,7 @@ public class Program {
         System.out.println("Qual o Vertice final?");
         String fim = leitorScanner.next();
 
-        while (!fim.equals("v9") || !fim.equals("v8") || !fim.equals("v7") || !fim.equals("v6") || !fim.equals("v5") || !fim.equals("v4") || !fim.equals("v3") || !fim.equals("v2") || !fim.equals("v1")) {
+        while (!fim.equalsIgnoreCase("v9")) {
             System.out.println("Digite um vértice válido");
             System.out.println("Os vértices válidos são:");
             for (Vertice a : grafo.getVertices()) {
@@ -76,6 +76,8 @@ public class Program {
             System.out.println("Insira novamente o vértice final");
             fim = leitorScanner.next();
         }
+        
+        
 
         //Executando o Algoritmo
         AlgotimoDijkstra teste = new AlgotimoDijkstra(grafo);
