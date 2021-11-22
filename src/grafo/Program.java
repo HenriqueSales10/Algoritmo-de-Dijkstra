@@ -1,15 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package grafo;
 
 import java.util.Scanner;
 
 /**
  *
- * @author Ana Gonçalo
+ * @author Henrique Sales
  */
 public class Program {
 
@@ -77,8 +73,6 @@ public class Program {
             fim = leitorScanner.next();
         }
         
-        
-
         //Executando o Algoritmo
         AlgotimoDijkstra teste = new AlgotimoDijkstra(grafo);
         teste.Algoritmo();
